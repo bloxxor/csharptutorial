@@ -16,8 +16,8 @@ namespace prjKreisberechnung
         }
         public static double berechneFlaeche(double kreisRadius)
         {
-            return Math.PI * kreisRadius * kreisRadius; // Fläche
+            return Math.PI * Math.Pow(kreisRadius, 2); // Fläche
         }
-        
+
     }
 }
