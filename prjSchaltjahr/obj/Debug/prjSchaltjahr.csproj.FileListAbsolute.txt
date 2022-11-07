@@ -1,0 +1,8 @@
+H:\workspace\cbm\C#\Projects\prjSchaltjahr\bin\Debug\prjSchaltjahr.exe.config
+H:\workspace\cbm\C#\Projects\prjSchaltjahr\bin\Debug\prjSchaltjahr.exe
+H:\workspace\cbm\C#\Projects\prjSchaltjahr\bin\Debug\prjSchaltjahr.pdb
+H:\workspace\cbm\C#\Projects\prjSchaltjahr\obj\Debug\prjSchaltjahr.csproj.AssemblyReference.cache
+H:\workspace\cbm\C#\Projects\prjSchaltjahr\obj\Debug\prjSchaltjahr.csproj.SuggestedBindingRedirects.cache
+H:\workspace\cbm\C#\Projects\prjSchaltjahr\obj\Debug\prjSchaltjahr.csproj.CoreCompileInputs.cache
+H:\workspace\cbm\C#\Projects\prjSchaltjahr\obj\Debug\prjSchaltjahr.exe
+H:\workspace\cbm\C#\Projects\prjSchaltjahr\obj\Debug\prjSchaltjahr.pdb
