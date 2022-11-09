@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prjKreisberechnung", "..\pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prjLeseKunden", "..\prjLeseKunden\prjLeseKunden.csproj", "{CA49E792-115A-4B39-93DB-BD79498C251E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prjLeseStudenten", "..\prjLeseStudenten\prjLeseStudenten.csproj", "{09BA4736-71B0-43F0-81F6-23C53D986F80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{CA49E792-115A-4B39-93DB-BD79498C251E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA49E792-115A-4B39-93DB-BD79498C251E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA49E792-115A-4B39-93DB-BD79498C251E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09BA4736-71B0-43F0-81F6-23C53D986F80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09BA4736-71B0-43F0-81F6-23C53D986F80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09BA4736-71B0-43F0-81F6-23C53D986F80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09BA4736-71B0-43F0-81F6-23C53D986F80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
