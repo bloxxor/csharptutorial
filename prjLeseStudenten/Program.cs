@@ -1,54 +1,64 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using Datenbankverwaltung;
+using Studentenverwaltung;
 
 using c = System.Console;
 
 namespace prjLeseStudenten {
-    internal class Program {
-        static void Main(string[] args) {
+	internal class Program {
+		static void Main(string[] args) {
 
-            try {
+			try {
 
-                Datenzugriff.cn.Open();
+				Student student = new Student();
 
-                int inRecords = Datenzugriff.daStudenten.Fill(Datenzugriff.dtStudenten);
+				string StrMessage = "Studenten-Verwaltung: ---> Treffen Sie eine Wahl:\n\n";
+				StrMessage += "(N) Neuen Studenten anlegen\n";
+				StrMessage += "(B) Studenten suchen\n";
+				StrMessage += "(L) Liste aller Studenten\n";
+				StrMessage += "(E) Beenden\n";
 
-                if (inRecords > 0) {
+				c.WriteLine(StrMessage);
+				c.Write("Ihre Wahl lautet: ");
+				string strWahl = c.ReadLine().ToUpper();
 
-                    c.WriteLine("Unsere alphabetische Studentenliste...\n\n");
-                    c.WriteLine("{0,-10} {1,-10} {2,-10} {3,-8} {4,-20} {5,-15} {6,-12}\n", "Nachname", "Vorname", "Geb.Datum", "geb.in", "Mail-Adresse", "Universität", "Ort");
+				switch (strWahl) {
+					case "N":
+						c.WriteLine("Daten eingeben: ");
+						student.AddStudent();
+						break;
+					case "B":
+						break;
+					case "L":
+                        c.WriteLine("Unsere alphabetische Studentenliste...\n\n");
+                        student.ShowAllStudents(); 
+						break;
+					case "E":
+						c.WriteLine("Zum Beenden bitte die Any Key Taste drücken.");
+                        c.ReadKey();
+                        break;
+				}
 
-                    foreach (DataRow dr in Datenzugriff.dtStudenten.Rows) {
-                        c.WriteLine("{0,-10} {1,-10} {2,-10} {3,-8} {4,-20} {5,-15} {6,-12}", dr[0], dr[1], Convert.ToDateTime(dr[2]).ToString("dd/MM/yyyy"), dr[3], dr[4], dr[5], dr[6]);
-                    }
+			}
+			catch (SqlException e) {
 
-                    c.WriteLine("\nAnzahl der Studenten: {0}", inRecords);
-                    c.ReadKey();
+				string msg = "";
+				for (int i = 0; i < e.Errors.Count; i++) {
+					msg += "Error #" + i + " Message: " + e.Errors[i].Message + "\n";
+				}
 
-                }
-                else {
-                    c.WriteLine("Leider keine Studenten gefunden'!");
-                    c.ReadKey();
-                }
+				c.WriteLine(msg);
+				c.ReadKey();
 
-            }
-            catch (SqlException e) {
-                string msg = "";
-                for (int i = 0; i < e.Errors.Count; i++) {
-                    msg += "Error #" + i + " Message: " + e.Errors[i].Message + "\n";
-                }
+			}
+			finally {
+				if (Datenzugriff.cn.State != ConnectionState.Closed) {
+					Datenzugriff.cn.Close();
+				}
+			}
 
-                c.WriteLine(msg);
-                c.ReadKey();
-
-            }
-            finally {
-                if (Datenzugriff.cn.State != ConnectionState.Closed) {
-                    Datenzugriff.cn.Close();
-                }
-            }
-
-        }
-    }
+		}
+	}
 }
