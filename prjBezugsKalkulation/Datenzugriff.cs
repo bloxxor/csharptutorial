@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Datenbankverwaltung {
     public static class Datenzugriff {
@@ -15,13 +11,17 @@ namespace Datenbankverwaltung {
         // Verbinden & Übergabe der Login Variable
         public static SqlConnection cn = new SqlConnection(conStrg);
 
-        public static string sCommand = "SELECT ListenEK, " +
+        public static string sCommand = "SELECT " +
+            "Menge, " +
+            "ListenEK, " +
+            "ListenEKGesamt, " +
             "Rabatt, " +
             "ZielEK, " +
             "Skonto, " +
             "BarEK, " +
             "BezugsK, " +
-            "BezugsP FROM tblBezKalk ";
+            "BezugsP " +
+            "FROM tblBezKalk ";
 
         // SQL-Adapter, in der die Datensätze gespeichert werden
         public static SqlDataAdapter daBezKalk = new SqlDataAdapter(sCommand, cn);
@@ -30,14 +30,16 @@ namespace Datenbankverwaltung {
         public static DataTable dtBezKalk = new DataTable();
 
         public static string addKalk = "INSERT INTO tblBezKalk " +
-            "(ListenEK" +
+            "(Menge" +
+            ", ListenEK" +
+            ", ListenEKGesamt" +
             ", Rabatt" +
             ", ZielEK" +
             ", Skonto" +
             ", BarEK" +
             ", BezugsK" +
             ", BezugsP) " +
-            "VALUES(@ListenEK,@Rabatt,@ZielEK,@Skonto,@BarEK,@BezugsK,@BezugsP)";
+            "VALUES(@Menge,@ListenEK,@ListenEKGesamt,@Rabatt,@ZielEK,@Skonto,@BarEK,@BezugsK,@BezugsP)";
 
     }
 

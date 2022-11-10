@@ -1,9 +1,8 @@
 ﻿// Meine Namespaces
-using System.Data;
 using Datenbankverwaltung;
 using System;
+using System.Data;
 using System.Data.SqlClient;
-
 using c = System.Console;
 
 namespace Studentenverwaltung {
@@ -65,11 +64,11 @@ namespace Studentenverwaltung {
             c.Write("Geboren in: ");
             geborenIn = Convert.ToString(c.ReadLine());
             c.Write("E-Mail: ");
-            mail= Convert.ToString(c.ReadLine());
+            mail = Convert.ToString(c.ReadLine());
             c.Write("Universität: ");
-            uni= Convert.ToString(c.ReadLine());
+            uni = Convert.ToString(c.ReadLine());
             c.Write("Ort der Universität: ");
-            ort= Convert.ToString(c.ReadLine());
+            ort = Convert.ToString(c.ReadLine());
 
             // Parameter von der INSERT Anweisung: 
             cmd.Parameters.Add("@NName", System.Data.SqlDbType.NVarChar, 50).Value = nachname;
@@ -93,9 +92,9 @@ namespace Studentenverwaltung {
         }
 
         public void searchStudent() {
-        
 
-        
+
+
         }
 
         public void ShowAllStudents() {

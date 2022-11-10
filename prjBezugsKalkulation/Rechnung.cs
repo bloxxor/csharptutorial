@@ -10,7 +10,9 @@ namespace Rechnungsverwaltung {
     public class Rechnung {
 
         private int ID;
+        private double Menge;
         private double ListenEK;
+        private double ListenEKGesamt;
         private double Rabatt;
         private double ZielEK;
         private double Skonto;
@@ -19,7 +21,9 @@ namespace Rechnungsverwaltung {
         private double BezugsP;
 
         public int id { get => ID; set => ID = value; }
+        public double menge { get => Menge; set => Menge = value; }
         public double listenEK { get => ListenEK; set => ListenEK = value; }
+        public double listenEKGesamt { get => ListenEKGesamt; set => ListenEKGesamt = value; }
         public double rabatt { get => Rabatt; set => Rabatt = value; }
         public double zielEK { get => ZielEK; set => ZielEK = value; }
         public double skonto { get => Skonto; set => Skonto = value; }
@@ -32,6 +36,8 @@ namespace Rechnungsverwaltung {
             SqlCommand cmd = new SqlCommand(Datenzugriff.addKalk, Datenzugriff.cn);
 
             c.WriteLine("---- Neue Bezugskostenkalkulation: ");
+            c.WriteLine("Menge eingeben: ");
+            menge = Convert.ToDouble(c.ReadLine());
             c.WriteLine("Listeneinkaufspreis eingeben: ");
             listenEK = Convert.ToDouble(c.ReadLine());
             c.WriteLine("Rabatt eingeben (%): ");
@@ -41,12 +47,15 @@ namespace Rechnungsverwaltung {
             c.WriteLine("Bezugskosten eingeben: (%)");
             bezugsK = Convert.ToDouble(c.ReadLine());
 
-            zielEK = listenEK - (listenEK / 100) * rabatt;
+            listenEKGesamt = listenEK * menge;
+            zielEK = listenEKGesamt - (listenEKGesamt / 100) * rabatt;
             barEK = zielEK - (zielEK / 100) * skonto;
             bezugsP = barEK + (barEK / 100) * bezugsK;
 
             // Parameter von der INSERT Anweisung
+            cmd.Parameters.Add("@Menge", System.Data.SqlDbType.Float).Value = menge;
             cmd.Parameters.Add("@ListenEK", System.Data.SqlDbType.Float).Value = listenEK;
+            cmd.Parameters.Add("@ListenEKGesamt", System.Data.SqlDbType.Float).Value = listenEKGesamt;
             cmd.Parameters.Add("@Rabatt", System.Data.SqlDbType.Float).Value = rabatt;
             cmd.Parameters.Add("@ZielEK", System.Data.SqlDbType.Float).Value = zielEK;
             cmd.Parameters.Add("@Skonto", System.Data.SqlDbType.Float).Value = skonto;
@@ -61,14 +70,21 @@ namespace Rechnungsverwaltung {
             cmd.ExecuteNonQuery();
 
             c.Clear();
-            c.WriteLine("Der folgende Datensatz wurde erfolgreich gespeichert: ");
-            c.WriteLine("LEK: " + listenEK);
-            c.WriteLine("Rabatt: " + rabatt + "%");
-            c.WriteLine("Ziel EK: " + zielEK);
-            c.WriteLine("SKonto: " + skonto + "%");
-            c.WriteLine("Bar EK: " + barEK);
-            c.WriteLine("Bezugskosten: " + bezugsK);
-            c.WriteLine("Bezugspreis: " + bezugsP);
+            c.WriteLine("Der folgende Datensatz wurde erfolgreich gespeichert:\n ");
+            c.WriteLine("Menge:               " + menge + " Stück");
+            c.WriteLine("--------------------------------");
+            c.WriteLine("Listen EK:           " + listenEK + " EUR");
+            c.WriteLine("LEK Gesamt:          " + listenEKGesamt + " EUR");
+            c.WriteLine("- Rabatt:            " + rabatt + "%");
+            c.WriteLine("--------------------------------");
+            c.WriteLine("= Ziel EK:           " + zielEK + " EUR");
+            c.WriteLine("- SKonto:            " + skonto + "%");
+            c.WriteLine("--------------------------------");
+            c.WriteLine("= Bar EK:            " + barEK + " EUR");
+            c.WriteLine("+ Bezugskosten:      " + bezugsK + "%");
+            c.WriteLine("--------------------------------");
+            c.WriteLine("= Bezugspreis:       " + bezugsP + " EUR");
+            c.WriteLine("________________________________\n\n");
 
             c.ReadKey();
 
@@ -84,17 +100,20 @@ namespace Rechnungsverwaltung {
 
                 foreach (DataRow dr in Datenzugriff.dtBezKalk.Rows) {
                     
-                    c.WriteLine("Listen EK: " + dr[0] + " EUR");
-                    c.WriteLine("- Rabatt: " + dr[1] + "%");
-                    c.WriteLine("------------------------");
-                    c.WriteLine("= Ziel EK: " + dr[2] + " EUR");
-                    c.WriteLine("- SKonto: " + dr[3] + "%");
-                    c.WriteLine("------------------------");
-                    c.WriteLine("= Bar EK: " + dr[4] + " EUR");
-                    c.WriteLine("+ Bezugskosten: " + dr[5] + "%");
-                    c.WriteLine("------------------------");
-                    c.WriteLine("= Bezugspreis: " + dr[6] + " EUR");
-                    c.WriteLine("______________________________\n\n");
+                    c.WriteLine("Menge:               " + dr[0] + " Stück");
+                    c.WriteLine("--------------------------------");
+                    c.WriteLine("Listen EK:           " + dr[1] + " EUR");
+                    c.WriteLine("LEK Gesamt:          " + dr[2] + " EUR");
+                    c.WriteLine("- Rabatt:            " + dr[3] + "%");
+                    c.WriteLine("--------------------------------");
+                    c.WriteLine("= Ziel EK:           " + dr[4] + " EUR");
+                    c.WriteLine("- SKonto:            " + dr[5] + "%");
+                    c.WriteLine("--------------------------------");
+                    c.WriteLine("= Bar EK:            " + dr[6] + " EUR");
+                    c.WriteLine("+ Bezugskosten:      " + dr[7] + "%");
+                    c.WriteLine("--------------------------------");
+                    c.WriteLine("= Bezugspreis:       " + dr[8] + " EUR");
+                    c.WriteLine("________________________________\n\n");
 
                 }
 
@@ -103,7 +122,7 @@ namespace Rechnungsverwaltung {
 
             }
             else {
-                c.WriteLine("Leider keine Kalkulationen gefunden'!");
+                c.WriteLine("Leider keine Kalkulationen gefunden!");
                 c.ReadKey();
             }
 
