@@ -1,64 +1,82 @@
-﻿using System;
+﻿using Datenbankverwaltung;
+using Studentenverwaltung;
 using System.Data;
 using System.Data.SqlClient;
-using Datenbankverwaltung;
-using Studentenverwaltung;
-
 using c = System.Console;
 
 namespace prjLeseStudenten {
-	internal class Program {
-		static void Main(string[] args) {
+    internal class Program {
+        static void Main(string[] args) {
 
-			try {
+            try {
 
-				Student student = new Student();
+                bool exit = false;
 
-				string StrMessage = "Studenten-Verwaltung: ---> Treffen Sie eine Wahl:\n\n";
-				StrMessage += "(N) Neuen Studenten anlegen\n";
-				StrMessage += "(B) Studenten suchen\n";
-				StrMessage += "(L) Liste aller Studenten\n";
-				StrMessage += "(E) Beenden\n";
+                do {
 
-				c.WriteLine(StrMessage);
-				c.Write("Ihre Wahl lautet: ");
-				string strWahl = c.ReadLine().ToUpper();
+                    c.Clear();
 
-				switch (strWahl) {
-					case "N":
-						c.WriteLine("Daten eingeben: ");
-						student.AddStudent();
-						break;
-					case "B":
-						break;
-					case "L":
-                        c.WriteLine("Unsere alphabetische Studentenliste...\n\n");
-                        student.ShowAllStudents(); 
-						break;
-					case "E":
-						c.WriteLine("Zum Beenden bitte die Any Key Taste drücken.");
-                        c.ReadKey();
-                        break;
-				}
+                    Student student = new Student();
 
-			}
-			catch (SqlException e) {
+                    string StrMessage = "Studenten-Verwaltung:\n\n";
+                    StrMessage += "(N) Neuen Studenten anlegen\n";
+                    StrMessage += "(S) Studenten suchen\n";
+                    StrMessage += "(L) Liste aller Studenten\n";
+                    StrMessage += "(D) Lösche Studenten\n";
+                    StrMessage += "(E) Beenden\n";
 
-				string msg = "";
-				for (int i = 0; i < e.Errors.Count; i++) {
-					msg += "Error #" + i + " Message: " + e.Errors[i].Message + "\n";
-				}
+                    c.WriteLine(StrMessage);
+                    c.Write("Eingabe: ");
 
-				c.WriteLine(msg);
-				c.ReadKey();
+                    string strWahl = c.ReadLine().ToUpper();
 
-			}
-			finally {
-				if (Datenzugriff.cn.State != ConnectionState.Closed) {
-					Datenzugriff.cn.Close();
-				}
-			}
+                    switch (strWahl) {
+                        case "N":
+                            c.WriteLine("Daten eingeben: ");
+                            student.AddStudent();
+                            break;
+                        case "S":
+                            student.searchStudent();
+                            break;
+                        case "L":
+                            c.WriteLine("Unsere alphabetische Studentenliste...\n\n");
+                            student.ShowAllStudents();
+                            break;
+                        case "D":
+                            c.WriteLine("Student löschen:\n\n");
+                            student.ShowAllStudents();
+                            student.deleteStudent();
+                            break;
+                        case "E":
+                            c.WriteLine("Zum Beenden bitte die Any Key Taste drücken.");
+                            c.ReadKey();
+                            exit = true;
+                            break;
+                        case "X":
+                            student.easterEgg();
+                            break;
+                    }
 
-		}
-	}
+                } while (!exit);
+
+            }
+            catch (SqlException e) {
+
+                string msg = "";
+                for (int i = 0; i < e.Errors.Count; i++) {
+                    msg += "Error #" + i + " Message: " + e.Errors[i].Message + "\n";
+                }
+
+                c.WriteLine(msg);
+                c.ReadKey();
+
+            }
+            finally {
+                if (Datenzugriff.connection.State != ConnectionState.Closed) {
+                    Datenzugriff.connection.Close();
+                }
+            }
+
+        }
+    }
 }
