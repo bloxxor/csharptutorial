@@ -1,0 +1,8 @@
+H:\workspace\cbm\C#\Projects\ExchangeCalc\bin\Debug\ExchangeCalc.exe.config
+H:\workspace\cbm\C#\Projects\ExchangeCalc\bin\Debug\ExchangeCalc.exe
+H:\workspace\cbm\C#\Projects\ExchangeCalc\bin\Debug\ExchangeCalc.pdb
+H:\workspace\cbm\C#\Projects\ExchangeCalc\obj\Debug\ExchangeCalc.csproj.AssemblyReference.cache
+H:\workspace\cbm\C#\Projects\ExchangeCalc\obj\Debug\ExchangeCalc.csproj.SuggestedBindingRedirects.cache
+H:\workspace\cbm\C#\Projects\ExchangeCalc\obj\Debug\ExchangeCalc.csproj.CoreCompileInputs.cache
+H:\workspace\cbm\C#\Projects\ExchangeCalc\obj\Debug\ExchangeCalc.exe
+H:\workspace\cbm\C#\Projects\ExchangeCalc\obj\Debug\ExchangeCalc.pdb

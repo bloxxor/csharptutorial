@@ -1,0 +1,8 @@
+H:\workspace\cbm\C#\Projects\prjSP_StudentManagement\bin\Debug\prjSP_StudentManagement.exe.config
+H:\workspace\cbm\C#\Projects\prjSP_StudentManagement\bin\Debug\prjSP_StudentManagement.exe
+H:\workspace\cbm\C#\Projects\prjSP_StudentManagement\bin\Debug\prjSP_StudentManagement.pdb
+H:\workspace\cbm\C#\Projects\prjSP_StudentManagement\obj\Debug\prjSP_StudentManagement.csproj.AssemblyReference.cache
+H:\workspace\cbm\C#\Projects\prjSP_StudentManagement\obj\Debug\prjSP_StudentManagement.csproj.SuggestedBindingRedirects.cache
+H:\workspace\cbm\C#\Projects\prjSP_StudentManagement\obj\Debug\prjSP_StudentManagement.csproj.CoreCompileInputs.cache
+H:\workspace\cbm\C#\Projects\prjSP_StudentManagement\obj\Debug\prjSP_StudentManagement.exe
+H:\workspace\cbm\C#\Projects\prjSP_StudentManagement\obj\Debug\prjSP_StudentManagement.pdb

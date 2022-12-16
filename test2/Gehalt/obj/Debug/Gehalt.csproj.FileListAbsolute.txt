@@ -1,0 +1,11 @@
+H:\workspace\cbm\C#\Projects\test2\Gehalt\bin\Debug\Gehalt.exe.config
+H:\workspace\cbm\C#\Projects\test2\Gehalt\bin\Debug\Gehalt.exe
+H:\workspace\cbm\C#\Projects\test2\Gehalt\bin\Debug\Gehalt.pdb
+H:\workspace\cbm\C#\Projects\test2\Gehalt\obj\Debug\Gehalt.csproj.AssemblyReference.cache
+H:\workspace\cbm\C#\Projects\test2\Gehalt\obj\Debug\Gehalt.csproj.SuggestedBindingRedirects.cache
+H:\workspace\cbm\C#\Projects\test2\Gehalt\obj\Debug\Gehalt.formMain.resources
+H:\workspace\cbm\C#\Projects\test2\Gehalt\obj\Debug\Gehalt.Properties.Resources.resources
+H:\workspace\cbm\C#\Projects\test2\Gehalt\obj\Debug\Gehalt.csproj.GenerateResource.cache
+H:\workspace\cbm\C#\Projects\test2\Gehalt\obj\Debug\Gehalt.csproj.CoreCompileInputs.cache
+H:\workspace\cbm\C#\Projects\test2\Gehalt\obj\Debug\Gehalt.exe
+H:\workspace\cbm\C#\Projects\test2\Gehalt\obj\Debug\Gehalt.pdb

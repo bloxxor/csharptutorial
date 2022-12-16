@@ -1,0 +1,17 @@
+H:\workspace\cbm\C#\Projects\test2\ArtikelRechner\bin\Debug\net6.0-windows\ArtikelRechner.exe
+H:\workspace\cbm\C#\Projects\test2\ArtikelRechner\bin\Debug\net6.0-windows\ArtikelRechner.deps.json
+H:\workspace\cbm\C#\Projects\test2\ArtikelRechner\bin\Debug\net6.0-windows\ArtikelRechner.runtimeconfig.json
+H:\workspace\cbm\C#\Projects\test2\ArtikelRechner\bin\Debug\net6.0-windows\ArtikelRechner.dll
+H:\workspace\cbm\C#\Projects\test2\ArtikelRechner\bin\Debug\net6.0-windows\ArtikelRechner.pdb
+H:\workspace\cbm\C#\Projects\test2\ArtikelRechner\obj\Debug\net6.0-windows\ArtikelRechner.csproj.AssemblyReference.cache
+H:\workspace\cbm\C#\Projects\test2\ArtikelRechner\obj\Debug\net6.0-windows\ArtikelRechner.Form1.resources
+H:\workspace\cbm\C#\Projects\test2\ArtikelRechner\obj\Debug\net6.0-windows\ArtikelRechner.csproj.GenerateResource.cache
+H:\workspace\cbm\C#\Projects\test2\ArtikelRechner\obj\Debug\net6.0-windows\ArtikelRechner.GeneratedMSBuildEditorConfig.editorconfig
+H:\workspace\cbm\C#\Projects\test2\ArtikelRechner\obj\Debug\net6.0-windows\ArtikelRechner.AssemblyInfoInputs.cache
+H:\workspace\cbm\C#\Projects\test2\ArtikelRechner\obj\Debug\net6.0-windows\ArtikelRechner.AssemblyInfo.cs
+H:\workspace\cbm\C#\Projects\test2\ArtikelRechner\obj\Debug\net6.0-windows\ArtikelRechner.csproj.CoreCompileInputs.cache
+H:\workspace\cbm\C#\Projects\test2\ArtikelRechner\obj\Debug\net6.0-windows\ArtikelRechner.dll
+H:\workspace\cbm\C#\Projects\test2\ArtikelRechner\obj\Debug\net6.0-windows\refint\ArtikelRechner.dll
+H:\workspace\cbm\C#\Projects\test2\ArtikelRechner\obj\Debug\net6.0-windows\ArtikelRechner.pdb
+H:\workspace\cbm\C#\Projects\test2\ArtikelRechner\obj\Debug\net6.0-windows\ArtikelRechner.genruntimeconfig.cache
+H:\workspace\cbm\C#\Projects\test2\ArtikelRechner\obj\Debug\net6.0-windows\ref\ArtikelRechner.dll

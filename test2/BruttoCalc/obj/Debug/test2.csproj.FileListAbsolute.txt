@@ -1,0 +1,11 @@
+H:\workspace\cbm\C#\Projects\test2\test2\bin\Debug\test2.exe.config
+H:\workspace\cbm\C#\Projects\test2\test2\bin\Debug\test2.exe
+H:\workspace\cbm\C#\Projects\test2\test2\bin\Debug\test2.pdb
+H:\workspace\cbm\C#\Projects\test2\test2\obj\Debug\test2.csproj.AssemblyReference.cache
+H:\workspace\cbm\C#\Projects\test2\test2\obj\Debug\test2.csproj.SuggestedBindingRedirects.cache
+H:\workspace\cbm\C#\Projects\test2\test2\obj\Debug\test2.q.resources
+H:\workspace\cbm\C#\Projects\test2\test2\obj\Debug\test2.Properties.Resources.resources
+H:\workspace\cbm\C#\Projects\test2\test2\obj\Debug\test2.csproj.GenerateResource.cache
+H:\workspace\cbm\C#\Projects\test2\test2\obj\Debug\test2.csproj.CoreCompileInputs.cache
+H:\workspace\cbm\C#\Projects\test2\test2\obj\Debug\test2.exe
+H:\workspace\cbm\C#\Projects\test2\test2\obj\Debug\test2.pdb

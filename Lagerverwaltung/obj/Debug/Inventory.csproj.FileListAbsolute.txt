@@ -1,0 +1,11 @@
+H:\workspace\cbm\C#\Projects\Lagerverwaltung\obj\Debug\Inventory.csproj.AssemblyReference.cache
+H:\workspace\cbm\C#\Projects\Lagerverwaltung\obj\Debug\Inventory.csproj.SuggestedBindingRedirects.cache
+H:\workspace\cbm\C#\Projects\Lagerverwaltung\obj\Debug\Inventory.formMain.resources
+H:\workspace\cbm\C#\Projects\Lagerverwaltung\obj\Debug\Inventory.csproj.GenerateResource.cache
+H:\workspace\cbm\C#\Projects\Lagerverwaltung\obj\Debug\Inventory.csproj.CoreCompileInputs.cache
+H:\workspace\cbm\C#\Projects\Lagerverwaltung\bin\Debug\Inventory.exe.config
+H:\workspace\cbm\C#\Projects\Lagerverwaltung\bin\Debug\Inventory.exe
+H:\workspace\cbm\C#\Projects\Lagerverwaltung\bin\Debug\Inventory.pdb
+H:\workspace\cbm\C#\Projects\Lagerverwaltung\obj\Debug\Inventory.Properties.Resources.resources
+H:\workspace\cbm\C#\Projects\Lagerverwaltung\obj\Debug\Inventory.exe
+H:\workspace\cbm\C#\Projects\Lagerverwaltung\obj\Debug\Inventory.pdb

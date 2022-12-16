@@ -1,0 +1,11 @@
+H:\workspace\cbm\C#\Projects\prjFahrtenbuch\bin\Debug\prjFahrtenbuch.exe.config
+H:\workspace\cbm\C#\Projects\prjFahrtenbuch\bin\Debug\prjFahrtenbuch.exe
+H:\workspace\cbm\C#\Projects\prjFahrtenbuch\bin\Debug\prjFahrtenbuch.pdb
+H:\workspace\cbm\C#\Projects\prjFahrtenbuch\obj\Debug\prjFahrtenbuch.csproj.AssemblyReference.cache
+H:\workspace\cbm\C#\Projects\prjFahrtenbuch\obj\Debug\prjFahrtenbuch.csproj.SuggestedBindingRedirects.cache
+H:\workspace\cbm\C#\Projects\prjFahrtenbuch\obj\Debug\prjFahrtenbuch.csproj.CoreCompileInputs.cache
+H:\workspace\cbm\C#\Projects\prjFahrtenbuch\obj\Debug\prjFahrtenbuch.exe
+H:\workspace\cbm\C#\Projects\prjFahrtenbuch\obj\Debug\prjFahrtenbuch.pdb
+H:\workspace\cbm\C#\Projects\prjFahrtenbuch\bin\Debug\ConsoleTables.dll
+H:\workspace\cbm\C#\Projects\prjFahrtenbuch\bin\Debug\ConsoleTables.pdb
+H:\workspace\cbm\C#\Projects\prjFahrtenbuch\obj\Debug\prjFahrtenbuch.csproj.CopyComplete

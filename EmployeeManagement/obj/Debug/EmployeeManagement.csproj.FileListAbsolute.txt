@@ -1,0 +1,12 @@
+H:\workspace\cbm\C#\Projects\EmployeeManagement\bin\Debug\EmployeeManagement.exe.config
+H:\workspace\cbm\C#\Projects\EmployeeManagement\bin\Debug\EmployeeManagement.exe
+H:\workspace\cbm\C#\Projects\EmployeeManagement\bin\Debug\EmployeeManagement.pdb
+H:\workspace\cbm\C#\Projects\EmployeeManagement\obj\Debug\EmployeeManagement.csproj.AssemblyReference.cache
+H:\workspace\cbm\C#\Projects\EmployeeManagement\obj\Debug\EmployeeManagement.csproj.SuggestedBindingRedirects.cache
+H:\workspace\cbm\C#\Projects\EmployeeManagement\obj\Debug\EmployeeManagement.CustomControls.UserControl1.resources
+H:\workspace\cbm\C#\Projects\EmployeeManagement\obj\Debug\EmployeeManagement.formMain.resources
+H:\workspace\cbm\C#\Projects\EmployeeManagement\obj\Debug\EmployeeManagement.Properties.Resources.resources
+H:\workspace\cbm\C#\Projects\EmployeeManagement\obj\Debug\EmployeeManagement.csproj.GenerateResource.cache
+H:\workspace\cbm\C#\Projects\EmployeeManagement\obj\Debug\EmployeeManagement.csproj.CoreCompileInputs.cache
+H:\workspace\cbm\C#\Projects\EmployeeManagement\obj\Debug\EmployeeManagement.exe
+H:\workspace\cbm\C#\Projects\EmployeeManagement\obj\Debug\EmployeeManagement.pdb
