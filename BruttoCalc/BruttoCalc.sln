@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BruttoCalc", "BruttoCalc.csproj", "{74BC1535-6890-4039-86AD-C10ECE652C8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74BC1535-6890-4039-86AD-C10ECE652C8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74BC1535-6890-4039-86AD-C10ECE652C8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74BC1535-6890-4039-86AD-C10ECE652C8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74BC1535-6890-4039-86AD-C10ECE652C8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF9E58EC-C774-4D50-904B-621D0D39345D}
+	EndGlobalSection
+EndGlobal
